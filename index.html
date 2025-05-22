@@ -97,3 +97,26 @@ agrinho<!DOCTYPE html>
 </body>
 </html>
 /* Estilos Gerais */
+<!-- Adicione isso no <head> -->
+<meta name="description" content="Site sobre inovações e sustentabilidade no agronegócio brasileiro">
+<html lang="pt-BR" aria-live="polite"> <!-- Idioma definido e modo de atualização -->
+
+<!-- Banner principal com role -->
+<header class="header-banner" role="banner" aria-label="Cabeçalho principal">
+    
+<!-- Navegação com landmark -->
+<nav id="navbar" role="navigation" aria-label="Menu principal">
+    <h2 class="sr-only">Menu de Navegação</h2> <!-- Título oculto apenas para leitores de tela -->
+    <ul>
+        <li><a href="#tecnologia" aria-current="page"><i class="fas fa-microchip" aria-hidden="true"></i> Tecnologia</a></li>
+        <!-- ... -->
+    </ul>
+</nav>
+
+<!-- Seções com landmarks -->
+<section id="tecnologia" role="region" aria-labelledby="tech-heading">
+    <div class="section-header">
+        <h2 id="tech-heading">Tecnologia no Campo</h2>
+        <div class="section-divider" aria-hidden="true"></div>
+    </div>
+</section>
