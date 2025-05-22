@@ -187,3 +187,30 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
+/* Estilo para elementos ocultos visualmente mas acessíveis */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Contraste aprimorado */
+body {
+    color: #333; /* Preto suave com 7:1 de contraste */
+}
+
+a, button {
+    color: #0056b3; /* Azul com bom contraste */
+}
+
+/* Foco visível */
+a:focus, button:focus {
+    outline: 3px solid #ffbf47;
+    outline-offset: 3px;
+    }
