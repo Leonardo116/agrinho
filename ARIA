@@ -1,1 +1,26 @@
+<!-- Formulário acessível -->
+<form id="contactForm" aria-labelledby="contact-heading">
+    <h3 id="contact-heading">Formulário de Contato</h3>
+    
+    <div class="form-group">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required 
+               aria-required="true" aria-describedby="nome-help">
+        <span id="nome-help" class="help-text">Digite seu nome completo</span>
+    </div>
+    
+    <button type="submit" aria-label="Enviar formulário de contato">
+        Enviar <i class="fas fa-paper-plane" aria-hidden="true"></i>
+    </button>
+</form>
 
+<!-- Vídeo acessível -->
+<div class="video-container">
+    <video controls aria-labelledby="video1-title video1-desc">
+        <source src="assets/videos/agro-sustentavel.mp4" type="video/mp4">
+        <track kind="captions" src="assets/captions/agro-pt.vtt" srclang="pt" label="Português">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+    <p id="video1-title" class="sr-only">Técnicas de agricultura sustentável</p>
+    <p id="video1-desc" class="sr-only">Vídeo mostra plantio direto e rotação de culturas em fazenda modelo</p>
+</div>
